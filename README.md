@@ -18,6 +18,6 @@
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/b6b8bc0b-72e6-47ba-935f-d37973ba563c" width="480"></td>
-    <td></td>
+    <td><img src="https://github.com/user-attachments/assets/339839fe-6924-4085-a993-2a7e8520349c" width="480"></td>
   </tr>
 </table>
