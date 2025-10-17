@@ -11,6 +11,6 @@
 > — Джордж Рафт
 
 *Так же представлю подборку смешных картиночек:*
-<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/18e3c6f1-2e88-44f6-bd0e-f479e76902ec" />
+<img width="480" height="640" alt="image" src="https://github.com/user-attachments/assets/18e3c6f1-2e88-44f6-bd0e-f479e76902ec" />
 <img width="736" height="882" alt="image" src="https://github.com/user-attachments/assets/c6c8ab38-16eb-458c-8c7c-903be19f516d" />
 <img width="480" height="480" alt="image" src="https://github.com/user-attachments/assets/b6b8bc0b-72e6-47ba-935f-d37973ba563c" />
