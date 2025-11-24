@@ -1,0 +1,223 @@
+/*глобальные переменные (доступны во всех стилях),
+ объявляются в селекторе root */
+:root {
+    --primary-color: #5e6472;
+    --accent-color: #ffa69e;
+    --text-main: #333333;
+    --text-light: #ffffff;
+    --bg-light: #f9f9f9;
+    --bg-footer: #e3e3e3;
+    --border-color: #dddddd;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*начальные настройки для всех элементов*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*стили всей страницы*/
+.page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1rem 2rem;
+    box-shadow: var(--shadow);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Nav */
+.nav__link {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+/* использование псевдокласса для изменения 
+цвета при наведении мышки на nav ссылку */
+.nav__link:hover {
+    color: var(--accent-color);
+}
+
+/* */
+.nav__link_active {
+    border-bottom: 2px solid var(--accent-color);
+}
+
+/* Поиск */
+.search {
+    display: flex;
+    gap: 5px;
+}
+
+.search__input {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+}
+
+.search__button {
+    padding: 8px 16px;
+    background-color: var(--accent-color);
+    color: var(--text-main);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+/*css трансформация для плавной анимации 
+при наведении мыши на кнопку*/
+.search__button:hover {
+    transform: scale(1.05);
+}
+
+/* Layout - левая часть страницы  */
+.layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*адаптивная вёрстка: если ширина экрана меньше 
+или равна 768px, применяются новые правила вёрстки*/
+@media (max-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+    .header__container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.page__title {
+    margin-bottom: 20px;
+}
+
+/* Card */
+.card {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+    animation: slideIn 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.3s; }
+.card:nth-child(3) { animation-delay: 0.5s; }
+
+.card_highlight {
+    border-left: 5px solid var(--accent-color);
+    animation-delay: 0.7s;
+}
+
+.card__title {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.card__text {
+    line-height: 1.5;
+}
+
+/* Логика анимации */
+@keyframes slideIn {
+    from {
+        opacity: 0; /*прозрачность*/
+        transform: translateY(30px); /*сдвиг*/
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Related */
+.related {
+    margin-top: 30px;
+}
+
+.related__title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.related__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Mini-card */
+.mini-card {
+    background: #fff;
+    padding: 10px;
+    border-left: 4px solid var(--accent-color);
+    box-shadow: var(--shadow);
+}
+
+.mini-card__link {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: bold;
+    display: block;
+}
+
+/* Footer */
+.footer {
+    margin-top: auto;
+    background-color: var(--bg-footer);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer__link {
+    margin: 0 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer__link:hover {
+    color: var(--text-main);
+}
