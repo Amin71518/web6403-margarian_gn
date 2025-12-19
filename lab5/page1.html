@@ -20,7 +20,7 @@
                 <a href="news.html" class="nav__link">Новости</a>
                 <a href="login.html" class="nav__link">Авторизация</a>
             </nav>
-            
+
             <!-- Блок search -->
             <form class="search">
                 <div class="search__group">
@@ -36,14 +36,14 @@
         <!-- Элемент layout__content -->
         <section class="layout__content">
             <h1 class="page__title">Новости компании</h1>
-            
+
             <div class="news-list">
                 <!-- Блок card -->
                 <article class="card">
                     <h3 class="card__title">В головном офисе прорвало трубу</h3>
                     <p class="card__text">Спасайтесь кто может!!! Работа офиса приостановлена.</p>
                 </article>
-                    
+
                 <article class="card">
                     <h3 class="card__title">Компания готовится к Новому Году</h3>
                     <p class="card__text">Скоро праздник, и мы готовим подарки для всех сотрудников!</p>
@@ -53,6 +53,15 @@
                     <h3 class="card__title">Важное объявление</h3>
                     <p class="card__text">Денег нет, но вы держитесь! Хорошего настроения.</p>
                 </article>
+
+                <div class="related" style="margin-top: 20px;">
+                    <h2 class="related__title">Наши почтенные работники:</h2>
+                    <ul id="authorizedUsersList" style="list-style: none; padding: 0;">
+                        <li style="color: gray; font-style: italic;">Пока никого нет...</li>
+                    </ul>
+                    <button id="clearUsers" style="margin-top: 10px; font-size: 0.7rem; cursor: pointer;">Очистить
+                        список</button>
+                </div>
             </div>
         </section>
 
@@ -112,4 +121,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
