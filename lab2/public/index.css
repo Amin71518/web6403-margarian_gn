@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.flex-middle-between {
+  place-content: center space-between;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+/* Общие стили для элементов формы поиска */
+.search-form {
+  display: flex;
+  width: 300px;
+  height: 32px;
+}
+.search-form .input-wrap {
+  flex: 1 0 auto;
+}
+.search-form input {
+  width: 100%;
+  height: 100%;
+}
+.search-form .submit-btn {
+  flex-basis: auto;
+}
+
+/* Хедер */
+#mainHeader {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 16px;
+  background: #838181;
+  color: #fff;
+}
+#mainNav {
+  display: flex;
+  align-items: center;
+}
+#mainNav .nav-item {
+  margin-right: 12px;
+}
+
+/* Основной контент */
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+main section {
+  flex: 0 0 auto;
+  padding: 0 16px;
+}
+main section:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+
+/* Левый блок */
+.leftSide section article:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+/* Похожие статьи */
+.related-articles {
+  display: flex;
+}
+.related-articles article:not(:last-child) {
+  margin-right: 16px;
+}
+
+/* Подвал */
+#mainFoter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  padding: 16px;
+  background: #f1f1f1;
+}
+#footerNav .nav-item:not(:last-child) {
+  margin-right: 12px;
+}
+.links-label {
+  margin-bottom: 4px;
+}
+
+/* Общие стили для ссылок */
+a {
+  color: inherit;
+  text-decoration: none;
+}
