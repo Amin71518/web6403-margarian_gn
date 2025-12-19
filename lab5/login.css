@@ -23,6 +23,13 @@ body {
     padding: 20px;
 }
 
+.error-hint { 
+    color: red; 
+    font-size: 0.8rem; 
+    display: block; 
+    min-height: 1em; 
+}
+
 .auth-form {
     background-color: var(--card-bg);
     padding: 40px;

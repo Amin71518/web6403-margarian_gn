@@ -18,6 +18,29 @@
     padding: 0;
 }
 
+.status-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 10px; 
+    font-size: 0.9rem; 
+}
+        
+.status-table th, .status-table td { 
+    border: 1px solid var(--border-color); 
+    padding: 8px; text-align: left; 
+}
+        
+.status-table th { 
+    background-color: var(--primary-color); 
+    color: white; 
+}
+        
+#loaderStatus { 
+    font-style: italic; 
+    margin-top: 5px; 
+    font-size: 0.8rem; 
+}
+
 /*стили всей страницы*/
 .page {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
